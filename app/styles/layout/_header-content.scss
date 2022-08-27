@@ -1,0 +1,55 @@
+.header-content{
+    z-index: -10;
+    height: 847px;
+    background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.9)), url(../images/img-banner-header.png)  no-repeat center center / cover;
+    // overflow: hidden;
+
+    &--div{
+        padding-top: 200px;
+        display: flex;
+        position: relative;
+    }
+    &--text{
+        text-transform: uppercase;
+    }
+
+
+
+    &--title{
+        color: $text-color--white;
+        font-size: 8.5rem;
+        font-weight: 700;
+        margin-top: 4rem;
+        margin-bottom: 2.8rem;
+    }
+
+    &--topic{
+        color: $secondary-color;
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 5.3rem;
+    }
+
+    &--desc{
+        color: $text-color--white;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 8.8rem;
+        line-height: 22px;
+    }
+
+    &--btn{
+        text-transform: uppercase;
+        display: block;
+        width: 272px;
+        height: 58px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;  
+        background-color: $secondary-color;
+        color: $primary-color;
+        box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.44);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
