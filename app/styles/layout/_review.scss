@@ -1,0 +1,127 @@
+.review{
+    &-blog{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-content{
+        margin-top: 3rem; 
+        margin-right: 2rem;
+    }
+
+    &-title{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: $text-color--black;
+        margin-bottom: 3.3rem;
+    }
+    
+    &-info{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #5F5F5F;
+        margin-bottom: 3.3rem;
+    }
+
+    &-detail{
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 4.4rem;
+    }
+
+    &-dot{
+        margin-right: 1.2rem;
+    }
+
+    &-desc{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: #5F5F5F;
+    }
+
+    &-name{
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: $text-color--black;
+        margin-bottom: 1.4rem;
+    }
+    &-company{
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #5F5F5F;
+    }
+
+    @media screen and (max-width: 1439px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media screen and (max-width: 1279px) {
+        &-blog{
+            align-items: unset;
+        }
+        &-img{
+            width: 50%;
+            min-height: 100%;
+            object-fit: fill;
+        }
+        padding-bottom: 2.6rem;
+        &-desc{
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &-company{
+            margin-bottom: 2rem;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        &-title{
+            font-size: 35px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &-img{
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+        &-blog{
+            flex-direction: column-reverse;
+        }
+        &-title{
+            text-align: center;
+            line-height: 4rem;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        &-dot{
+            width: 30px;
+            height: 30px;
+        }
+        &-info{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &-desc{
+            font-size: 22px;
+        }
+        &-detail{
+            margin-bottom: 2rem;
+        }
+        &-name, &-company{
+            text-align: end;
+        }
+    }
+}

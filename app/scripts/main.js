@@ -12,4 +12,3 @@ btnClose.addEventListener("click", ()=>{
   menuToggle.style = " transition: all 0.3s linear;"
 })
 
-const header = document.querySelector(".header-top")

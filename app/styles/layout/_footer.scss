@@ -1,0 +1,155 @@
+.footer{
+    background-color: #101C32;
+    border-top: 8px solid #FFC107;
+    margin-bottom: 113px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &-content{
+        display: flex;
+        // justify-content: space-between;
+    }
+    &-info{
+        width: 400px;
+        margin-right: 2.5rem;
+    }
+    &-logo{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: $text-color--white;
+        display: block;
+        margin-bottom: 2.2rem;
+
+    }
+    
+    &-title{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #F5BB0C;
+        display: block;
+        margin-bottom: 2.2rem;
+    }
+    &-desc{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        display: block;
+        margin-bottom: 2.2rem;
+        max-width: 320px;
+    }
+    &-btn{
+        width: 295px;
+        height: 65px;
+        background: #FFC107;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #302362;
+        padding: 18px 40px;
+    }
+    &-contact{
+        width: 400px;
+        margin-right: 2rem;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+    &-menu{   
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        padding-bottom: 4px;
+        margin-bottom: 25px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 56px;
+            height: 2px;
+            background-color: #FFC107;
+            top: 100%;
+            left: 0;
+        }
+    }
+    &-address{
+        max-width: 250px;
+        margin-bottom: 9px;
+    }
+    &-email{
+        margin-bottom: 9px;
+    }
+    &-phone{
+        margin-bottom: 9px;
+    }
+    &-website{
+        text-transform: none;
+        color: white;
+    }
+    &-link{
+        width: 190px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-right: 2rem;
+    }
+    &-item{
+        display: block;
+        color: #FFFFFF;
+    }
+
+    @media screen and(max-width: 1439px) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    @media screen and(max-width: 1279px) {
+        &-link, &-contact, &-info{
+            width: unset;
+        }
+    }
+    @media screen and(max-width: 1023px) {
+        &-content{
+            flex-wrap: wrap;
+        }
+        &-link, &-info{
+            width: 400px;
+        }
+        &-link, &-news{
+            margin-top: 3rem;
+        }
+    }
+
+    @media screen and(max-width: 767px) {
+        padding-left: 2rem;
+        padding-right: 1rem;
+        &-contact, &-link, &-info{
+            margin-right: unset !important;
+        }
+
+        &-btn{
+            width: 200px;
+            height: 40px;   
+            padding: 5px 10px;
+        }
+        &-contact{
+            margin-top: 3rem;
+        }
+        &-address{
+            max-width: unset;
+        }
+    }
+}

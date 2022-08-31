@@ -7,6 +7,8 @@
     justify-content: space-between;
     padding-left: 8.3rem;
     padding-right: 7.7rem;
+    position: relative;
+    z-index: 1;
     &--toggle{
         display: none;
         font-size: 2.5rem;
@@ -27,8 +29,9 @@
     }
     &--item {
         margin-left: 5.3rem;
-        // position: relative;       
+        position: relative;       
     }
+
     .is-active{
         &::after{
             content: "";
@@ -46,6 +49,7 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 19.5px;
+        font-family: $secondary-font;
     }
     @media screen and(max-width: 1439px) {
         padding-left: 5rem;
@@ -59,6 +63,9 @@
         padding-right: 1rem;
         &--item {
             margin-left: 2.5rem;    
+        }
+        &--logo{
+            width: 300px;
         }
     }
 
@@ -84,21 +91,20 @@
             position: fixed;
             width: 100%;
             top: 0;
-            bottom: 0;
+            bottom: -10%;
             right: 0;
             display: block;
             background:$primary-color;
             text-align: center;
             transform: translateX(0);
-            z-index: 999999;
+            z-index: 1;
         }
         .menu-NotActive{
             transform: translateX(100%);
         }
        
         &--item{
-            padding: 4rem;
-            // z-index: 10;
+            padding: 2.5rem;
         }
         
         &--link{

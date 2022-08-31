@@ -1,0 +1,36 @@
+.header-banner{
+    background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.9)), url(../images/img-banner-header.png)  no-repeat center center / cover;
+    padding-top: 135px;
+    padding-bottom: 135px;
+
+    &--title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 4.5rem;
+    }
+
+    &--desc{
+        max-width: 810px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    @media screen and (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
