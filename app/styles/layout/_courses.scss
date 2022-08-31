@@ -48,6 +48,7 @@
             object-fit: cover;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            cursor: pointer;
         }
         &--content{
             border: #D9D9D9 1px solid;
@@ -69,6 +70,7 @@
             line-height: 0px;
             font-family: $thir-font;
             margin-bottom: 2.3rem;
+            cursor: pointer;
         }
         &--name{
             color: $text-color--black;
@@ -79,6 +81,7 @@
             margin-bottom: 2.3rem;
             text-transform: capitalize;
             min-height: calc(46px);
+            cursor: pointer;
         }
 
         &--desc{
