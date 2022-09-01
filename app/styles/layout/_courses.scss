@@ -122,14 +122,14 @@
         &--view{
             display: flex;
             &-icon{
-                width: 12px;
-                height: 10px;
+                width: 14px;
+                height: 14px;
                 margin-right: 0.5rem;
             }
             &-number{
                 font-family: $thir-font;
                 font-weight: 400;
-                font-size: 10px;
+                font-size: 14px;
                 line-height: 12px;
                 text-align: center;
                 text-transform: capitalize;
@@ -139,7 +139,7 @@
         &--price-number{
             font-family: $thir-font;
             font-weight: 400;
-            font-size: 10px;
+            font-size: 14px;
             line-height: 12px;
             text-align: center;
             text-transform: capitalize;
@@ -198,10 +198,12 @@
     }
 
     @media screen and(max-width: 767px) {
+        padding-right: 1rem;
+        padding-left: 1rem;
         &-list{
             display: grid;
             grid-auto-flow: column;
-            grid-auto-columns: 80%;
+            grid-auto-columns: 100%;
             column-gap: 2.5rem;
             grid-template-columns: unset;
             overflow-x: auto;
@@ -278,7 +280,7 @@
     @media screen and(max-width: 284px) {
         
         &-list{
-            grid-auto-columns: 90%;
+            grid-auto-columns: 100%;
         }
         &-item{
             

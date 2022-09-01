@@ -587,7 +587,7 @@ button {
       padding-left: 1rem;
       padding-right: 1rem; }
       .benefit-img {
-        width: 70%;
+        width: 90%;
         margin-bottom: 4rem; }
       .benefit-div {
         -webkit-box-orient: vertical;
@@ -597,7 +597,7 @@ button {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding-right: 1rem; }
+        padding-left: 0; }
       .benefit-title {
         font-size: 3rem;
         max-width: unset; }
@@ -746,13 +746,13 @@ button {
       display: -ms-flexbox;
       display: flex; }
       .courses-item--view-icon {
-        width: 12px;
-        height: 10px;
+        width: 14px;
+        height: 14px;
         margin-right: 0.5rem; }
       .courses-item--view-number {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 12px;
         text-align: center;
         text-transform: capitalize;
@@ -760,7 +760,7 @@ button {
     .courses-item--price-number {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
-      font-size: 10px;
+      font-size: 14px;
       line-height: 12px;
       text-align: center;
       text-transform: capitalize;
@@ -804,35 +804,38 @@ button {
       .courses-item--desc {
         min-height: 111px; } }
   @media screen and (max-width: 767px) {
-    .courses-list {
-      display: -ms-grid;
-      display: grid;
-      grid-auto-flow: column;
-      grid-auto-columns: 80%;
-      -webkit-column-gap: 2.5rem;
-      -moz-column-gap: 2.5rem;
-      column-gap: 2.5rem;
-      -ms-grid-columns: unset;
-      grid-template-columns: unset;
-      overflow-x: auto;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      padding: 1rem;
-      -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-      scroll-snap-stop: always; }
-      .courses-list::-webkit-scrollbar {
-        display: none; }
-    .courses-item {
-      width: 100%; }
-      .courses-item--desc {
-        min-height: 111px;
-        font-size: 16px; }
-    .courses-title {
-      font-size: 30px;
-      line-height: 30px; }
-    .courses-desc {
-      font-size: 18px; } }
+    .courses {
+      padding-right: 1rem;
+      padding-left: 1rem; }
+      .courses-list {
+        display: -ms-grid;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        -webkit-column-gap: 2.5rem;
+        -moz-column-gap: 2.5rem;
+        column-gap: 2.5rem;
+        -ms-grid-columns: unset;
+        grid-template-columns: unset;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding: 1rem;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always; }
+        .courses-list::-webkit-scrollbar {
+          display: none; }
+      .courses-item {
+        width: 100%; }
+        .courses-item--desc {
+          min-height: 111px;
+          font-size: 16px; }
+      .courses-title {
+        font-size: 30px;
+        line-height: 30px; }
+      .courses-desc {
+        font-size: 18px; } }
   @media screen and (max-width: 400px) {
     .courses {
       padding-top: 6rem;
@@ -867,7 +870,7 @@ button {
         height: 40px; } }
   @media screen and (max-width: 284px) {
     .courses-list {
-      grid-auto-columns: 90%; }
+      grid-auto-columns: 100%; }
     .courses-item--name {
       min-height: 80px; }
     .courses-item--desc {
