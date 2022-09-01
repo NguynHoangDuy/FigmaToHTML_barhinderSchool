@@ -1,6 +1,6 @@
 .header-content{
     height: 847px;
-    background: url(../images/img-banner-header2.png) no-repeat bottom right,linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.9)), url(../images/img-banner-header.png)  no-repeat center center / cover;
+    background: url(../images/img-banner-header2.png) no-repeat 95% 100%,linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.9)), url(../images/img-banner-header.png)  no-repeat center center / cover;
     
     &--div{
         padding-top: 200px;
@@ -51,6 +51,7 @@
         cursor: pointer;
     }
     @media screen and(max-width: 1439px) {
+        background: url(../images/img-banner-header2.png) no-repeat 100% 100%,linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.9)), url(../images/img-banner-header.png)  no-repeat center center / cover;
         &--div{
             padding-left: 5rem;
             padding-right: 5rem;
