@@ -1397,8 +1397,8 @@ button {
           margin-left: 0.8rem; } }
   @media screen and (max-width: 471px) {
     .blog {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
       padding-bottom: 60px; }
       .blog-list {
         display: block; }
