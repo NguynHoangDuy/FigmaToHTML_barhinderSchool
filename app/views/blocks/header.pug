@@ -4,18 +4,11 @@ header.header-top
     i.header-top--toggle.fa.fa-bars 
     ul.header-top--menu.menu-NotActive 
         i.header-top--close.fa.fa-close
-        li.header-top--item
-            a.header-top--link(href="./index.html") home
-        li.header-top--item
-            a.header-top--link(href="./about.html") about
-        li.header-top--item
-            a.header-top--link(href="#") portfollio
-        li.header-top--item
-            a.header-top--link(href="#") blog
-        li.header-top--item
-            a.header-top--link(href="#") services
-        li.header-top--item
-            a.header-top--link(href="#") team
-        li.header-top--item
-            a.header-top--link(href="#") contact us
+        +menuItem("home", "./index.html")
+        +menuItem("about", "./about.html")
+        +menuItem("portfollio")
+        +menuItem("blog")
+        +menuItem("services")
+        +menuItem("team")
+        +menuItem("contact us")
         

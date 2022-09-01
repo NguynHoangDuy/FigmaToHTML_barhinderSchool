@@ -1296,6 +1296,13 @@ button {
     .blog-list {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+    .blog-img {
+      min-width: 100%;
+      min-height: 180px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+      cursor: pointer; }
     .blog-item {
       width: calc((100%/2) - 10px); }
       .blog-item:last-child, .blog-item:nth-child(1) {

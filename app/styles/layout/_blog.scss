@@ -127,6 +127,13 @@
         &-list{
             flex-wrap: wrap;
         }
+        &-img{
+            min-width: 100%;
+            min-height: 180px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            cursor: pointer;
+        }
         &-item{
             width: calc((100%/2) - 10px);
             &:last-child, &:nth-child(1){
