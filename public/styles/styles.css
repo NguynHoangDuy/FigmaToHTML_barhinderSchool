@@ -909,7 +909,7 @@ button {
     padding-left: 2rem;
     padding-right: 2rem; } }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1263px) {
   .review {
     padding-bottom: 2.6rem; }
     .review-blog {
