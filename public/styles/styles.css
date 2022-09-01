@@ -829,7 +829,7 @@ button {
       .courses-item {
         width: 100%; }
         .courses-item--desc {
-          min-height: 111px;
+          min-height: 80px;
           font-size: 16px; }
       .courses-title {
         font-size: 30px;
@@ -872,9 +872,9 @@ button {
     .courses-list {
       grid-auto-columns: 100%; }
     .courses-item--name {
-      min-height: 80px; }
+      min-height: 60px; }
     .courses-item--desc {
-      min-height: 150px; }
+      min-height: 170px; }
     .courses-btn {
       width: 150px;
       height: 40px;
