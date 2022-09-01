@@ -235,14 +235,18 @@ button {
       width: unset;
       height: unset;
       display: inline-block;
-      padding: 20px; }
+      padding: 20px;
+      font-size: 14px; }
     .header-content--title {
       margin-top: 3rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      font-size: 30px; }
     .header-content--topic {
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      font-size: 25px; }
     .header-content--desc {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem;
+      font-size: 16px; } }
 
 .header-banner {
   background: -webkit-gradient(linear, left top, right top, from(rgba(48, 35, 98, 0.9)), to(rgba(48, 35, 98, 0.9))), url(../images/img-banner-header.png) no-repeat center center/cover;
@@ -276,6 +280,12 @@ button {
     .header-banner {
       padding-left: 1rem;
       padding-right: 1rem; } }
+  @media screen and (max-width: 400px) {
+    .header-banner--title {
+      font-size: 30px; }
+    .header-banner--desc {
+      font-weight: 400;
+      font-size: 16px; } }
 
 .about-history, .about-vision {
   display: -webkit-box;
@@ -393,6 +403,17 @@ button {
     width: calc(80%);
     margin: 0 auto; } }
 
+@media screen and (max-width: 400px) {
+  .about-content--title {
+    font-size: 25px; }
+  .about-content--btn {
+    font-size: 16px;
+    width: 200px;
+    height: 50px; }
+  .about--desc {
+    font-weight: 400;
+    font-size: 16px; } }
+
 @media screen and (max-width: 299px) {
   .about-content--btn {
     width: 160px;
@@ -493,7 +514,11 @@ button {
       font-size: 16px; } }
   @media screen and (max-width: 439px) {
     .intro-item {
-      width: 80%; } }
+      width: 90%; }
+    .intro-title {
+      font-size: 18px; }
+    .intro-desc {
+      font-size: 14px; } }
 
 .benefit {
   padding: 9.5rem 0;
@@ -582,15 +607,22 @@ button {
     .benefit {
       padding: 6rem 0; }
       .benefit-img {
-        width: 80%;
+        width: 100%;
         margin-bottom: 2rem; }
       .benefit-div {
-        padding-left: 1rem;
-        padding-right: 1rem; }
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; }
       .benefit-title {
         margin-bottom: 2rem;
-        font-size: 2.8rem;
-        font-size: 2.4rem; } }
+        font-size: 2.4rem;
+        line-height: 30px; }
+      .benefit-item {
+        font-size: 14px; }
+        .benefit-item span {
+          font-size: 20px; }
+      .benefit-btn {
+        width: 160px;
+        height: 38px; } }
 
 .courses {
   padding-top: 9.7rem;
@@ -794,7 +826,12 @@ button {
     .courses-item {
       width: 100%; }
       .courses-item--desc {
-        min-height: 111px; } }
+        min-height: 111px; }
+    .courses-title {
+      font-size: 30px;
+      line-height: 30px; }
+    .courses-desc {
+      font-size: 18px; } }
   @media screen and (max-width: 400px) {
     .courses {
       padding-top: 6rem;
@@ -809,9 +846,10 @@ button {
           height: 200px;
           position: relative; }
       .courses-title {
-        font-size: 30px; }
+        font-size: 25px;
+        line-height: 30px; }
       .courses-desc {
-        font-size: 18px; }
+        font-size: 16px; }
       .courses-btn {
         width: 190px;
         height: 40px; } }
@@ -830,12 +868,13 @@ button {
     .courses-list {
       grid-auto-columns: 90%; }
     .courses-item--name {
-      min-height: 92px; }
+      min-height: 80px; }
     .courses-item--desc {
-      min-height: 200px; }
+      min-height: 150px; }
     .courses-btn {
       width: 150px;
-      height: 40px; } }
+      height: 40px;
+      font-size: 14px; } }
 
 .review-blog {
   display: -webkit-box;
@@ -933,7 +972,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .review-img {
-    width: 70%;
+    width: 90%;
     display: block;
     margin: 0 auto; }
   .review-blog {
@@ -958,6 +997,24 @@ button {
     margin-bottom: 2rem; }
   .review-name, .review-company {
     text-align: end; } }
+
+@media screen and (max-width: 400px) {
+  .review-img {
+    width: 100%; }
+  .review-title {
+    font-size: 2.5rem;
+    line-height: 30px; }
+  .review-content {
+    margin-right: 0; }
+  .review-info {
+    font-size: 18px; }
+  .review-desc {
+    font-size: 18px; }
+  .review-dot {
+    width: 20px;
+    height: 20px; }
+  .review-name, .review-company {
+    font-size: 16px; } }
 
 .teacher {
   padding-top: 100px;
@@ -1043,29 +1100,32 @@ button {
         color: #000000;
         width: 50%; } }
   @media screen and (max-width: 767px) {
-    .teacher-content {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-    .teacher-title {
-      margin-bottom: 2rem; }
-    .teacher-desc {
-      width: 90%;
-      text-align: center; }
-    .teacher-list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      overflow: visible;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      grid-auto-flow: column; }
-    .teacher-item {
-      width: calc((100%/2) - 20px);
-      margin-bottom: 80px; }
-      .teacher-item:last-child, .teacher-item:nth-child(3) {
-        margin-bottom: 0; } }
+    .teacher {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      .teacher-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      .teacher-title {
+        margin-bottom: 2rem; }
+      .teacher-desc {
+        width: 90%;
+        text-align: center; }
+      .teacher-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: visible;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        grid-auto-flow: column; }
+      .teacher-item {
+        width: calc((100%/2) - 20px);
+        margin-bottom: 80px; }
+        .teacher-item:last-child, .teacher-item:nth-child(3) {
+          margin-bottom: 0; } }
   @media screen and (max-width: 499px) {
     .teacher-item::after {
       height: 30px; } }
@@ -1148,7 +1208,8 @@ button {
         width: 50%; } }
   @media screen and (max-width: 1023px) {
     .advertise {
-      padding-top: 140px; }
+      padding-top: 140px;
+      margin-bottom: 8rem; }
       .advertise-img {
         width: 35%; }
       .advertise-title {
@@ -1157,20 +1218,30 @@ button {
       .advertise-btn {
         padding: 0;
         height: 55px;
-        width: 220px; } }
+        width: 220px;
+        font-size: 18px; } }
   @media screen and (max-width: 767px) {
-    .advertise-div {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      text-align: center; }
-    .advertise-img {
-      width: 80%;
-      margin-bottom: 3rem; } }
+    .advertise {
+      padding-top: 100px;
+      margin-bottom: 6rem; }
+      .advertise-div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center; }
+      .advertise-title {
+        font-size: 30px; }
+      .advertise-desc:first-of-type {
+        margin-bottom: 2rem; }
+      .advertise-img {
+        width: 80%;
+        margin-bottom: 3rem; }
+      .advertise-btn {
+        font-size: 16px; } }
   @media screen and (max-width: 443px) {
     .advertise {
       padding-left: 1rem;
@@ -1180,7 +1251,8 @@ button {
         width: 90%;
         margin-bottom: 2rem; }
       .advertise-title {
-        font-size: 30px; }
+        font-size: 25px;
+        line-height: 30px; }
       .advertise-desc {
         font-size: 14px; }
         .advertise-desc:first-of-type {
@@ -1293,29 +1365,32 @@ button {
           padding-left: 0.5rem;
           margin-left: 0.5rem; } }
   @media screen and (max-width: 767px) {
-    .blog-list {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-    .blog-img {
-      min-width: 100%;
-      min-height: 180px;
-      -o-object-fit: cover;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-      cursor: pointer; }
-    .blog-item {
-      width: calc((100%/2) - 10px); }
-      .blog-item:last-child, .blog-item:nth-child(1) {
-        margin-bottom: 3rem; }
-    .blog-title {
-      font-size: 36px; }
-    .blog-desc {
-      min-height: 128px; }
-    .blog-detail {
-      font-size: 12px; }
-      .blog-detail span {
-        padding-left: 0.8rem;
-        margin-left: 0.8rem; } }
+    .blog {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      .blog-list {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+      .blog-img {
+        min-width: 100%;
+        min-height: 180px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        cursor: pointer; }
+      .blog-item {
+        width: calc((100%/2) - 5px); }
+        .blog-item:last-child, .blog-item:nth-child(1) {
+          margin-bottom: 3rem; }
+      .blog-title {
+        font-size: 36px; }
+      .blog-desc {
+        min-height: 128px; }
+      .blog-detail {
+        font-size: 12px; }
+        .blog-detail span {
+          padding-left: 0.8rem;
+          margin-left: 0.8rem; } }
   @media screen and (max-width: 471px) {
     .blog {
       padding-left: 1rem;
@@ -1324,14 +1399,20 @@ button {
       .blog-list {
         display: block; }
       .blog-item {
-        width: calc((90%));
+        width: calc((100%));
         margin: 0 auto; }
         .blog-item:not(:last-child) {
           margin-bottom: 3rem; }
       .blog-desc {
-        min-height: 100px; }
+        min-height: 100px;
+        font-size: 16px; }
+      .blog-title {
+        font-size: 25px;
+        line-height: 30px; }
+      .blog-topic {
+        font-size: 15px; }
       .blog-detail {
-        font-size: 12px; }
+        font-size: 14px; }
         .blog-detail span {
           padding-left: 0.8rem;
           margin-left: 0.8rem; } }

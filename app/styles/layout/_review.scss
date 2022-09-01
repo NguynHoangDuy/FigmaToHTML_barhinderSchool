@@ -93,7 +93,7 @@
     }
     @media screen and (max-width: 767px) {
         &-img{
-            width: 70%;
+            width: 90%;
             display: block;
             margin: 0 auto;
         }
@@ -122,6 +122,35 @@
         }
         &-name, &-company{
             text-align: end;
+        }
+    }
+
+    @media screen and(max-width:400px) {
+        &-img{
+            width: 100%;
+        }
+        &-title{
+            font-size: 2.5rem;
+            line-height: 30px;
+        }
+        &-content{
+            margin-right: 0;
+        }
+        &-info{
+            font-size: 18px;
+        }
+
+        &-desc{
+            font-size: 18px;
+        }
+
+        &-dot{
+            width: 20px;
+            height: 20px;
+        }
+
+        &-name, &-company{
+            font-size: 16px;
         }
     }
 }

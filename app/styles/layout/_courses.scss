@@ -221,6 +221,13 @@
             }
             
         }   
+        &-title{
+            font-size:30px;
+            line-height: 30px;
+        }
+        &-desc{
+            font-size: 18px;
+        }   
     }
 
     @media screen and(max-width: 400px) {
@@ -239,10 +246,11 @@
             }
         }
         &-title{
-            font-size: 30px;
+            font-size: 25px;
+            line-height: 30px;
         }
         &-desc{
-            font-size: 18px;
+            font-size: 16px;
         }   
         &-btn{
             width: 190px;
@@ -274,15 +282,16 @@
         &-item{
             
             &--name{
-                min-height: 92px;
+                min-height: 80px;
             }
             &--desc{
-                min-height: 200px;
+                min-height: 150px;
             }
         }   
         &-btn{
             width: 150px;
             height: 40px;
+            font-size: 14px;
         }
     }
 }

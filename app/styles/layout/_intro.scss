@@ -99,7 +99,14 @@
 
     @media screen and (max-width: 439px) {
         &-item{
-            width: 80%;
+            width: 90%;
+        }
+
+        &-title{
+            font-size: 18px;
+        }
+        &-desc{
+            font-size: 14px;
         }
     }
 }

@@ -34,4 +34,15 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    @media screen and(max-width: 400px) {
+        &--title{
+            font-size: 30px;
+        }
+    
+        &--desc{
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
 }

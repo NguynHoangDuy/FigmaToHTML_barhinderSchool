@@ -98,19 +98,23 @@
             height: unset;
             display: inline-block;
             padding: 20px;
+            font-size: 14px;
         }
 
         &--title{
             margin-top: 3rem;
             margin-bottom: 2rem;
+            font-size: 30px;
         }
     
         &--topic{
             margin-bottom: 3rem;
+            font-size: 25px;
         }
     
         &--desc{
             margin-bottom: 4rem;
+            font-size: 16px;
         }
 
     }

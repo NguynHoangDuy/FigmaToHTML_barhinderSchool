@@ -124,6 +124,8 @@
         }
     }
     @media screen and(max-width: 767px) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         &-list{
             flex-wrap: wrap;
         }
@@ -135,7 +137,7 @@
             cursor: pointer;
         }
         &-item{
-            width: calc((100%/2) - 10px);
+            width: calc((100%/2) - 5px);
             &:last-child, &:nth-child(1){
                 margin-bottom: 3rem;
             }
@@ -162,7 +164,7 @@
             display: block;
         }
         &-item{
-            width: calc((90%));
+            width: calc((100%));
             margin: 0 auto;
             &:not(:last-child){
                 margin-bottom: 3rem;
@@ -170,9 +172,17 @@
         }
         &-desc{
             min-height: 100px;
+            font-size: 16px;
+        }
+        &-title{ 
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &-topic{
+            font-size: 15px;
         }
         &-detail{
-            font-size: 12px;
+            font-size: 14px;
             & span{
                 padding-left: 0.8rem;
                 margin-left: 0.8rem;
